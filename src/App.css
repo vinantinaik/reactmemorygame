@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+.navbar {
+  background: #5133a4;
+  min-height: 70px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+  color: #fff;
+  font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+  z-index: 99;
+  white-space: nowrap;
+}
+.navbar li {
+  display: inline-block;
+  padding: 26px 0;
+  width: 33.3%;
+  text-align: center;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #2c323c;
+  background-image: url(/4de356f…/00972/assets/images/geometry.svg);
+  background-repeat: repeat;
+  color: #fff;
+  min-height:20px;
+  padding: 18px 20px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+.shake {
+  animation-name: shake;
+  animation-duration: 1s
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
